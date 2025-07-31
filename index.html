@@ -2,43 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Coming Soon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: #e6bdb9; /* pink background */
-      width: 100%;
-    }
-    body {
-      min-height: 100vh;
-      min-width: 100vw;
-      display: flex;
-      align-items: center; /* vertical centering */
-      justify-content: flex-start; /* left alignment */
-    }
-    .coming-soon-img {
-      max-width: 70vw;
-      max-height: 80vh;
-      width: auto;
-      height: auto;
-      display: block;
-      margin: 0;
-    }
-    @media (max-width: 600px) {
-      .coming-soon-img {
-        max-width: 85vw;
-        max-height: 60vh;
-      }
-      body {
-        padding: 0;
-      }
-    }
-  </style>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://use.typekit.net/slo6hei.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="coming-soon.png" alt="Coming Soon" class="coming-soon-img">
+  <div class="video-container">
+    <video id="desktopVideo" class="bg-video" src="assets/desktop.mp4" autoplay loop muted playsinline></video>
+    <video id="mobileVideo" class="bg-video" src="assets/mobile.mp4" autoplay loop muted playsinline></video>
+  </div>
+  <div class="bottom-nav">
+    <span id="homeNav" class="nav-link active">Home</span>
+    <span id="infoNav" class="nav-link">Information</span>
+  </div>
+  <div id="infoOverlay" class="info-overlay">
+    <!-- Information text will go here -->
+    <div class="info-content">
+      <p class="info-title">FIRST PERSON (HARD-BOILED)</p>
+      <p>30 August - 27 September</p>
+      
+      <p class="info-title">LOCATION</p>
+      <p><a 
+        href="https://www.google.com/maps?q=24+Tawariki+Street,+Ponsonby,+1010,+T%C4%81maki+Makaurau" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        style="text-decoration: none; color: #E2BFBA;"
+      >
+        24 Tawariki Street, Ponsonby, 1010<br>
+        Tāmaki Makaurau
+      </a></p>
+      
+      <p class="info-title">HOURS</p>
+      <p>Wednesday-Friday 11am-6pm<br>
+      Saturday & Sunday 10am-3pm</p>
+      
+      <p class="info-title">SIMON ENDRES</p>
+      <p> (Ngā Puhi, Pākeha)</p>
+      
+      <p>Artist. Works out of Tāmaki Makaurau. Graduated Ilam School of Fine Arts, early 90s. Spent two decades in New York. Didn't lose the accent. Returned in 2020. Picked up where he left off.</p>
+      
+      <p>The work spans object, image, installation, sound. Looks at masculinity, power, systems of value. Built from the material and visual residue of capitalism and cultural drift. Tends to ask more questions than it answers.</p>
+      <p>
+        <a href="https://www.instagram.com/simonendres" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #E2BFBA;">@simonendres</a>
+      </p>
+
+
+      <p class="info-title">PUBLICATION CONTRIBUTORS</p>
+      
+      <p>
+        Phillip Kelly<br>
+        Rachel Liebert<br>
+        Talia Marshall<br>
+        Michel Mulipola</p>
+      
+
+      <p>Additional events and programmes will accompany the installation. A printed publication will also be released alongside.</p>
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
