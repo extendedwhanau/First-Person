@@ -12,6 +12,9 @@ a {
   color: #fff;
   text-decoration: none;
   text-align: center;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .video-container {
@@ -51,6 +54,9 @@ a {
   position: relative;
   transition: color 0.2s;
   text-align: center;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 .nav-link.active::after {
   content: '';
@@ -82,11 +88,13 @@ a {
   max-width: 550px;
   margin: auto;
   font-size: 0.875rem;
-  font-family: 'neue-haas-grotesk-text', sans-serif;
+  font-family: "neue-haas-grotesk-text", sans-serif;
   text-align: center;
   letter-spacing: 0.05em;
   line-height: 1.4;
   color: #fff;
+  font-weight: 500;
+  font-style: normal;
 }
 .info-content .info-title {
   margin: 18px 0 6px 0;
@@ -121,9 +129,9 @@ a {
   }
   
   .info-overlay {
-    align-items: center !important;
+    align-items: flex-start !important;
     justify-content: center !important;
-    padding: 0 !important;
+    padding: 20px 0 !important;
     background: rgba(226, 191, 186, 0.9);
     color: #000;
     height: 100vh !important;
@@ -135,12 +143,14 @@ a {
   }
   
   .info-content {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     max-width: 85%;
     padding: 0 20px;
-    margin: auto;
+    margin-top: 20px;
     color: #000;
-    transform: translateY(-2%);
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
   
   .info-overlay a {
