@@ -8,6 +8,11 @@ body, html {
   background: #000;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .video-container {
   position: fixed;
   top: 0; left: 0; width: 100vw; height: 100vh;
@@ -38,7 +43,7 @@ body, html {
   gap: 32px;
 }
 .nav-link {
-  color: #E2BFBA;
+  color: #fff;
   font-size: 16px;
   line-height: normal;
   cursor: pointer;
@@ -49,7 +54,7 @@ body, html {
   content: '';
   display: block;
   height: 2px;
-  background: #E2BFBA;
+  background: #fff;
   width: 100%;
   position: absolute;
   left: 0; bottom: -2px;
@@ -60,7 +65,19 @@ body, html {
 .info-overlay {
   position: fixed;
   top: 0; left: 0; width: 100vw; height: 100vh;
-  color: #E2BFBA;
+  color: #fff;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 40px 0;
+}
+
+.info-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  color: #fff;
   z-index: 10;
   display: none;
   justify-content: center;
@@ -84,8 +101,8 @@ body, html {
   margin: 18px 0 6px 0;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #E2BFBA;
-  border-bottom: 1px solid #E2BFBA;
+  color: #fff;
+  border-bottom: 1px solid #fff;
   display: inline-block;
   padding-bottom: 2px;
 }
