@@ -89,4 +89,27 @@ body, html {
   display: inline-block;
   padding-bottom: 2px;
 }
-.info-content p { margin: 8px 0; } 
+.info-content p { margin: 8px 0; }
+
+/* Mobile font size adjustments */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 14px;
+  }
+  
+  .info-content {
+    font-size: 0.75rem;
+    max-width: 90%;
+    padding: 0 20px;
+  }
+  
+  .info-content .info-title {
+    margin: 14px 0 4px 0;
+    font-size: 0.7rem;
+  }
+  
+  .info-content p {
+    margin: 6px 0;
+    font-size: 0.75rem;
+  }
+} 
