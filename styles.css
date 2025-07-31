@@ -115,8 +115,9 @@ a {
 /* Mobile font size adjustments */
 @media (max-width: 768px) {
   .nav-link {
-    font-size: 0.65rem;
+    font-size: 1rem;
     color: #fff;
+    border-bottom: none;
   }
   
   .info-overlay {
@@ -128,7 +129,7 @@ a {
   
   .info-content {
     font-size: 0.65rem;
-    max-width: 90%;
+    max-width: 85%;
     padding: 0 20px;
     margin-top: 20px;
     color: #000;
