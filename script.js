@@ -1,5 +1,21 @@
 const infoNav = document.getElementById('infoNav');
 const infoOverlay = document.getElementById('infoOverlay');
+const desktopVideo = document.getElementById('desktopVideo');
+const mobileVideo = document.getElementById('mobileVideo');
+
+// Ensure videos play immediately
+function playVideos() {
+  desktopVideo.play().catch(e => console.log('Desktop video autoplay failed:', e));
+  mobileVideo.play().catch(e => console.log('Mobile video autoplay failed:', e));
+}
+
+// Play videos on page load
+document.addEventListener('DOMContentLoaded', playVideos);
+
+// Also try to play on user interaction
+document.addEventListener('click', function() {
+  playVideos();
+}, { once: true });
 
 function toggleInfo() {
   infoNav.classList.toggle('active');
