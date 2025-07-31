@@ -115,23 +115,26 @@ a {
 /* Mobile font size adjustments */
 @media (max-width: 768px) {
   .nav-link {
-    font-size: 1rem;
-    color: #fff;
+    font-size: .7rem;
+    color: #E2BFBA;
     border-bottom: none;
   }
   
   .info-overlay {
-    align-items: flex-start;
-    padding: 20px 0;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
     background: #E2BFBA;
     color: #000;
+    height: 100vh !important;
+    display: flex !important;
   }
   
   .info-content {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     max-width: 85%;
     padding: 0 20px;
-    margin-top: 20px;
+    margin: 0 auto;
     color: #000;
   }
   
@@ -141,15 +144,14 @@ a {
   
   .info-content .info-title {
     margin: 14px 0 4px 0;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     padding-bottom: 0px;
     color: #000;
     border-bottom: 1px solid #000;
   }
   
   .nav-link.active::after {
-    height: 1px;
-    background: #000;
+    display: none;
   }
   
   .info-content p {
