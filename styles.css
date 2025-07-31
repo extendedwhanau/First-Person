@@ -124,7 +124,7 @@ a {
     align-items: center !important;
     justify-content: center !important;
     padding: 0 !important;
-    background: #E2BFBA;
+    background: rgba(226, 191, 186, 0.9);
     color: #000;
     height: 100vh !important;
     display: flex !important;
@@ -150,6 +150,10 @@ a {
     border-bottom: 1px solid #000;
   }
   
+  .info-content .info-title:first-child {
+    margin-top: 0;
+  }
+  
   .nav-link.active::after {
     display: none;
   }
@@ -157,6 +161,10 @@ a {
   .info-content p {
     margin: 6px 0;
     font-size: 0.65rem;
+  }
+  
+  .info-content p:first-child {
+    margin-top: 0;
   }
   
   .contributors-grid {
