@@ -127,6 +127,9 @@ a {
     background: rgba(226, 191, 186, 0.9);
     color: #000;
     height: 100vh !important;
+  }
+  
+  .info-overlay.active {
     display: flex !important;
   }
   
