@@ -136,7 +136,7 @@ body, html {
   .contributors-grid {
     gap: 8px;
     margin: 15px 0;
-    max-width: 80%;
+    max-width: 95%;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: repeat(2, 1fr);
