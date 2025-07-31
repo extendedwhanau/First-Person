@@ -91,6 +91,19 @@ body, html {
 }
 .info-content p { margin: 8px 0; }
 
+.contributors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.contributor-column p {
+  margin: 2px 0;
+  line-height: 1.2;
+}
+
 /* Mobile font size adjustments */
 @media (max-width: 768px) {
   .nav-link {
@@ -103,20 +116,34 @@ body, html {
   }
   
   .info-content {
-    font-size: 0.75rem;
-    max-width: 90%;
+    font-size: 0.65rem;
+    max-width: 70%;
     padding: 0 20px;
     margin-top: 20px;
   }
   
   .info-content .info-title {
     margin: 14px 0 4px 0;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding-bottom: 0px;
   }
   
   .info-content p {
     margin: 6px 0;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
+  }
+  
+  .contributors-grid {
+    gap: 8px;
+    margin: 15px 0;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contributor-column p {
+    margin: 1px 0;
+    font-size: 0.65rem;
+    line-height: 1.1;
   }
 } 
