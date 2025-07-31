@@ -107,7 +107,7 @@ body, html {
 /* Mobile font size adjustments */
 @media (max-width: 768px) {
   .nav-link {
-    font-size: 14px;
+    font-size: 0.65rem;
   }
   
   .info-overlay {
