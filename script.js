@@ -17,7 +17,13 @@ function setActiveNav(nav) {
 homeNav.addEventListener('click', () => setActiveNav('home'));
 infoNav.addEventListener('click', () => setActiveNav('info'));
 
-// Optional: Close overlay on click outside info-content
+// Close overlay on click anywhere on mobile, or outside info-content on desktop
 infoOverlay.addEventListener('click', (e) => {
-  if (e.target === infoOverlay) setActiveNav('home');
+  // On mobile (touch devices), close on any click
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    setActiveNav('home');
+  } else {
+    // On desktop, only close when clicking outside the content
+    if (e.target === infoOverlay) setActiveNav('home');
+  }
 }); 
