@@ -127,6 +127,7 @@ a {
     background: rgba(226, 191, 186, 0.9);
     color: #000;
     height: 100vh !important;
+    min-height: 100vh !important;
   }
   
   .info-overlay.active {
@@ -137,8 +138,9 @@ a {
     font-size: 0.7rem;
     max-width: 85%;
     padding: 0 20px;
-    margin: 0 auto;
+    margin: auto;
     color: #000;
+    transform: translateY(-2%);
   }
   
   .info-overlay a {
